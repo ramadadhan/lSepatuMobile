@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">laundrysepatu</string>
+    <string name="pilih_paket">Pilih Paket</string>
+
+    <string-array name="pilih_paket">
+        <item>Deep Clean</item>
+        <item>Unyellowing</item>
+        <item>Recolour</item>
+    </string-array>
+
+</resources>

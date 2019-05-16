@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="0pt"
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+    tools:context="com.example.laundrysepatu.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnlogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0px"
+            android:background="@drawable/gradient"
+            android:drawableStart="@drawable/ic_account_circle_black_24dp"
+            android:text="LOGIN"
+            android:textColor="#000" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ViewFlipper
+                android:id="@+id/v_flipper"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:layout_centerHorizontal="true"></ViewFlipper>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12pt"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/btnadd"
+                                android:layout_centerHorizontal="true"
+                                android:text="TAMBAH"
+                                android:textColor="@color/lingkaran_add"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <Button
+                                android:id="@+id/btnadd"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:layout_centerHorizontal="true"
+                                android:background="@drawable/lingkaran_add"
+                                android:drawableTop="@drawable/ic_add_black_24dp"
+                                android:indeterminate="false"
+                                android:onClick="onclick"
+                                android:padding="13dp"
+                                android:textStyle="bold"
+                                android:gravity="center"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/btnlist"
+                                android:layout_centerHorizontal="true"
+                                android:text="LIST JASA"
+                                android:textColor="@color/lingkaran_list"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <Button
+                                android:id="@+id/btnlist"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:layout_centerHorizontal="true"
+                                android:background="@drawable/lingkaran_list"
+                                android:drawableTop="@drawable/ic_list_black_24dp"
+                                android:indeterminate="false"
+                                android:onClick="onclick"
+                                android:padding="16dp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/btntracking"
+                                android:layout_centerHorizontal="true"
+                                android:text="TRACKING"
+                                android:textColor="@color/lingkaran_tracking"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <Button
+                                android:id="@+id/btntracking"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:layout_centerHorizontal="true"
+                                android:background="@drawable/lingkaran_location"
+                                android:drawableTop="@drawable/ic_directions_run_black_24dp"
+                                android:indeterminate="false"
+                                android:onClick="onclick"
+                                android:padding="16dp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12pt"
+                android:orientation="horizontal"
+                android:paddingBottom="9dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/btninfo"
+                                android:layout_centerHorizontal="true"
+                                android:text="INFO"
+                                android:textColor="@color/lingkaran_info"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <Button
+                                android:id="@+id/btninfo"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="12dp"
+                                android:background="@drawable/lingkaran_info"
+                                android:drawableTop="@drawable/ic_info_black_24dp"
+                                android:indeterminate="false"
+                                android:onClick="onclick"
+                                android:padding="12dp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
