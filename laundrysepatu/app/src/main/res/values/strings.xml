@@ -8,4 +8,22 @@
         <item>Recolour</item>
     </string-array>
 
+    <string-array name="list_kodetransaksi">
+        <item>TN001</item>
+        <item>TN002</item>
+        <item>TN003</item>
+    </string-array>
+
+    <string-array name="list_itempict">
+        <item>@drawable/image_1</item>
+        <item>@drawable/image_2</item>
+        <item>@drawable/image_3</item>
+    </string-array>
+
+    <string-array name="list_keterangan">
+        <item>Penjemuran</item>
+        <item>Done</item>
+        <item>Cleaning</item>
+    </string-array>
+
 </resources>

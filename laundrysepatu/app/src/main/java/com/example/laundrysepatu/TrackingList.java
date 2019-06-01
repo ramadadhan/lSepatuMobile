@@ -1,34 +1,47 @@
 package com.example.laundrysepatu;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
 
-import java.util.ArrayList;
-import java.util.Collections;
 
-public class TrackingList extends AppCompatActivity {
+import android.support.v7.widget.CardView;
+import android.support.v7.widget.RecyclerView;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
 
-    //Data-Data yang Akan dimasukan Pada ListView
-    private String[] transaksi = {"1. Tracking a", "2. Tracking b", "3. Tracking c"};
+public class TrackingList extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-    //ArrayList digunakan Untuk menampung Data tracking
-    private ArrayList<String> data;
+    //Variable
+    CardView cardItemLayout;
+    ImageView picture; // Picture
+    TextView transaction;
+    TextView description;
+
+    public TrackingList(View itemView) {
+        super(itemView);
+
+        //Set id
+        cardItemLayout = (CardView) itemView.findViewById(R.id.cardlist_tracking);
+
+        //Tambahan untuk id Picture
+        picture = (ImageView)itemView.findViewById(R.id.foto);
+
+        //id Text
+        transaction = (TextView) itemView.findViewById(R.id.listitem_transaksi);
+        description = (TextView) itemView.findViewById(R.id.listitem_keterangan);
+
+        //onClick
+        itemView.setOnClickListener(this);
+
+    }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tracking_list);
-        ListView listView = findViewById(R.id.trackinglist);
-        data = new ArrayList<>();
-        getData();
-        ArrayAdapter adapter = new ArrayAdapter<>(this, R.layout.support_simple_spinner_dropdown_item, data);
-        listView.setAdapter(adapter);
-    }
-
-    private void getData(){
-        //Memasukan Semua Data tracking kedalam ArrayList
-        Collections.addAll(data, transaksi);
+    public void onClick(View v) {
+        //tampilkan toas ketika click
+        Toast.makeText(v.getContext(),
+                String.format("Position %d", getAdapterPosition()),
+                Toast.LENGTH_SHORT).show();
     }
 }
+
+
