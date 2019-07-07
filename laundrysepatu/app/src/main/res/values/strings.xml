@@ -1,29 +1,26 @@
 <resources>
-    <string name="app_name">laundrysepatu</string>
-    <string name="pilih_paket">Pilih Paket</string>
-
+    <string name="app_name">PremiumCleanCare</string>
     <string-array name="pilih_paket">
+        <item>__Pilih Paket__</item>
         <item>Deep Clean</item>
         <item>Unyellowing</item>
         <item>Recolour</item>
     </string-array>
 
-    <string-array name="list_kodetransaksi">
-        <item>TN001</item>
-        <item>TN002</item>
-        <item>TN003</item>
-    </string-array>
-
-    <string-array name="list_itempict">
+    <string-array name="image_slider">
         <item>@drawable/image_1</item>
         <item>@drawable/image_2</item>
         <item>@drawable/image_3</item>
     </string-array>
 
-    <string-array name="list_keterangan">
-        <item>Penjemuran</item>
-        <item>Done</item>
-        <item>Cleaning</item>
-    </string-array>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+    <string name="slide_1_title">Tambah Laundry</string>
+    <string name="slide_1_desc">Nikmati fasilitas laundry yang mudah dan cepat</string>
+    <string name="slide_2_title">Paket </string>
+    <string name="slide_2_desc">Lihat dan pilih paket sesuai kebutuhan anda</string>
+    <string name="slide_3_title">Tracking</string>
+    <string name="slide_3_desc">Informasi lengkap mengenai sepatu anda ketika proses laundry</string>
 
 </resources>

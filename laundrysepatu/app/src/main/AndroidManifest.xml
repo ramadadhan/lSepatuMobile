@@ -1,36 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.laundrysepatu">
+    package="com.example.PremiumCleanCare">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/logo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Tambah"></activity>
-        <activity android:name=".ListJasa" /> <!-- Splash screen -->
         <activity
             android:name=".Splashscreen"
             android:label="@string/app_name"
             android:noHistory="true"
             android:screenOrientation="portrait"
-            android:theme="@style/Splashscreen">
+            android:theme="@style/Theme.NoTitleBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <!-- Main activity -->
         <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name" />
-        <!-- Login -->
+            android:name=".WelcomeIntro"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.NoTitleBar"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".Login"
-            android:label="@string/app_name" />
+            android:theme="@style/Theme.MenuBar"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+
+            android:name=".Registrasi"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.MenuBar"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProfileEdit"
+            android:theme="@style/Theme.MenuBar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Tambah"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.MenuBar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TrackingList"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.MenuBar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PaketList"
+            android:theme="@style/Theme.MenuBar"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Profile"
+            android:theme="@style/AppTheme"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TrackingDetail"
+            android:theme="@style/Theme.MenuBar"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Info"
+            android:theme="@style/Theme.MenuBar"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

@@ -1,15 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#e8150e</color>
-    <color name="colorPrimaryDark">#d10a03</color>
-    <color name="colorAccent">#e8150e</color>
+    <color name="colorPrimary">#b37700</color>
+    <color name="colorPrimaryDark">#996600</color>
+    <color name="colorAccent">#cc8800</color>
     <color name="white">#ffffff</color>
     <color name="colorTextWhite">#ffffff</color>
     <color name="colorText">#292929</color>
 
-    <color name="lingkaran_list"> #ff0000</color>
-    <color name="lingkaran_info"> #ff0000</color>
-    <color name="lingkaran_add"> #ff0000</color>
-    <color name="lingkaran_tracking"> #ff0000</color>
-    <color name="lingkaran_person"> #ff0000</color>
+    <!--Button Menu-->
+    <color name="lingkaran_menu">#b37700</color>
+
+    <!--Screeen BG Intro Color-->
+    <color name="bg_slider_screen1">#f4b241</color>
+    <color name="bg_slider_screen2">#16bc7d</color>
+    <color name="bg_slider_screen3">#02bde2</color>
+    <!-- dots inactive colors -->
+    <color name="dot_inactive_screen1">#ffa000</color>
+    <color name="dot_inactive_screen2">#008c57</color>
+    <color name="dot_inactive_screen3">#0e1e49</color>
+    <!-- dots active colors -->
+    <color name="dot_active_screen1">#f9c772</color>
+    <color name="dot_active_screen2">#74f7c5</color>
+    <color name="dot_active_screen3">#3a67e0</color>
+    <array name="array_dot_active">
+        <item>@color/dot_active_screen1</item>
+        <item>@color/dot_active_screen2</item>
+        <item>@color/dot_active_screen3</item>
+    </array>
+    <array name="array_dot_inactive">
+        <item>@color/dot_inactive_screen1</item>
+        <item>@color/dot_inactive_screen2</item>
+        <item>@color/dot_inactive_screen3</item>
+    </array>
 </resources>

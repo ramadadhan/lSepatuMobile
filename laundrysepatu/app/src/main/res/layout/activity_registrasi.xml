@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:orientation="vertical"
+    tools:context="com.example.PremiumCleanCare.Registrasi">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Registrasi"
+        android:textColor="#fff"
+        android:textSize="9pt"
+        android:textStyle="bold"
+        android:background="#b37700"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="130dp"
+                android:id="@+id/imgprofile"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="45dp"
+                android:src="@drawable/add_user" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Nama Lengkap"
+                android:textColor="@color/colorText"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                style="@style/styleEditText"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/edit_text_style"
+                android:hint="Isi nama lengkap"
+                android:paddingLeft="20dp"
+                android:id="@+id/edittextnamalengkap"
+                android:singleLine="true"/>
+
+            //ALAMAT LENGKAP
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Alamat Lengkap"
+                android:textColor="@color/colorText"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edittextalamatlengkap"
+                    style="@style/styleEditText"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="50"
+                    android:gravity="top|start"
+                    android:hint="Isikan alamat lengkap"
+                    android:inputType="textMultiLine"
+                    android:paddingLeft="20dp" />
+
+            //Email
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Email"
+                android:textColor="@color/colorText"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                style="@style/styleEditText"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/edit_text_style"
+                android:hint="Isi email"
+                android:paddingLeft="20dp"
+                android:id="@+id/edittextemail"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="No Hp"
+                android:textColor="@color/colorText"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                style="@style/styleEditText"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/edit_text_style"
+                android:hint="Isi nomor hp"
+                android:paddingLeft="20dp"
+                android:id="@+id/edittextnohp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Username"
+                android:textColor="@color/colorText"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                style="@style/styleEditText"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/edit_text_style"
+                android:hint="Isi username"
+                android:paddingLeft="20dp"
+                android:id="@+id/edittextusername"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Password"
+                android:textColor="@color/colorText"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                style="@style/styleEditText"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/edit_text_style"
+                android:hint="Isi Password"
+                android:paddingLeft="20dp"
+                android:id="@+id/edittextpassword"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Ulangi password"
+                android:textColor="@color/colorText"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                style="@style/styleEditText"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/edit_text_style"
+                android:hint="Ulangi password"
+                android:paddingLeft="20dp"
+                android:id="@+id/edittextulangipassword"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnbatal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_btn"
+                    android:text="Batal"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorTextWhite"
+                    />
+
+                <Button
+                    android:id="@+id/btndaftar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_btn"
+                    android:text="Daftar"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorTextWhite" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

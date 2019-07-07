@@ -1,35 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient"
-    tools:context="com.example.laundrysepatu.Tambah">
-
+    tools:context="com.example.PremiumCleanCare.Tambah">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="5px"
-            android:layout_marginRight="10dp"
-            android:text="Tambah Laundry"
-            android:textColor="@color/colorText"
-            android:textSize="9pt"
+            android:background="#b37700"
             android:gravity="center"
-            android:textStyle="bold"/>
+            android:text="Tambah Laundry"
+            android:textColor="#fff"
+            android:textSize="9pt"
+            android:textStyle="bold" />
 
         //NAMA LENGKAP
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:layout_marginRight="10dp"
             android:text="Nama Lengkap"
             android:textColor="@color/colorText"
@@ -38,6 +40,7 @@
 
         <EditText
             style="@style/styleEditText"
+            android:id="@+id/edittextnamalengkap"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:background="@drawable/edit_text_style"
@@ -60,22 +63,24 @@
             android:layout_height="wrap_content">
 
             <EditText
-                android:layout_weight="50"
-                android:layout_height="100dp"
+                android:id="@+id/edittextalamatlengkap"
                 style="@style/styleEditText"
-                android:inputType="textMultiLine"
+                android:layout_height="100dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
+                android:layout_weight="50"
+                android:gravity="top|start"
                 android:hint="Isikan alamat lengkap"
+                android:inputType="textMultiLine"
                 android:paddingLeft="20dp" />
 
             <ImageButton
                 android:id="@+id/shareloc"
-                android:layout_width="100px"
-                android:layout_height="100px"
+                android:layout_width="110px"
+                android:layout_height="110px"
                 android:layout_marginRight="10dp"
                 android:layout_marginTop="80px"
-                android:background="@drawable/addlocation" />
+                android:background="@drawable/map" />
         </LinearLayout>
 
         //MEREK SEPATU
@@ -95,7 +100,8 @@
             android:layout_marginRight="10dp"
             android:background="@drawable/edit_text_style"
             android:hint="Isikan merek sepatu"
-            android:paddingLeft="20dp"/>
+            android:paddingLeft="20dp"
+            android:id="@+id/edittextmereksepatu"/>
 
         //PILIH PAKET
         <TextView
@@ -103,20 +109,20 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:text="Pilih paket"
+            android:text="Keterangan"
             android:textColor="@color/colorText"
             android:textSize="15sp"
             android:textStyle="bold" />
-
-        <Spinner
-            android:id="@+id/pilihpaket"
-            android:entries="@array/pilih_paket"
+        <EditText
+            android:id="@+id/edittextketerangan"
             style="@style/styleEditText"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
+            android:gravity="top|start"
             android:background="@drawable/edit_text_style"
             android:paddingLeft="20dp"
-            android:drawableLeft="@drawable/down_arrow"/>
+            android:hint="Isi keterangan (kondisi) sepatu"
+            android:layout_height="100dp"/>
 
         //TAMBAH FOTO
         <TextView
@@ -134,13 +140,23 @@
             android:layout_marginLeft="10dp"
             android:layout_width="80dp"
             android:layout_height="25dp"
-            android:layout_marginBottom="40dp"
+            android:layout_marginBottom="5dp"
             android:text="Upload"
             android:textSize="5pt"
             android:background="#D3D3D3"
             android:textAllCaps="false"
             android:textColor="#000"
             android:radius="5dp"/>
+        <ImageView
+            android:id="@+id/imgviewupload"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:background="@drawable/edit_text_style"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+
 
 
         <LinearLayout
@@ -152,20 +168,20 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/btnkeluar"
+                android:id="@+id/btnbatal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="5dp"
                 android:layout_marginBottom="40dp"
                 android:layout_weight="1"
                 android:background="@drawable/round_btn"
-                android:text="Keluar"
+                android:text="Batal"
                 android:textAllCaps="false"
                 android:textColor="@color/colorTextWhite"
                 />
 
             <Button
-                android:id="@+id/btnTambah"
+                android:id="@+id/btntambah"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
@@ -177,4 +193,5 @@
                 android:textColor="@color/colorTextWhite" />
         </LinearLayout>
     </LinearLayout>
+    </ScrollView>
 </LinearLayout>

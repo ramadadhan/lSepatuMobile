@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    card_view:cardCornerRadius="6dp"
+    card_view:cardElevation="3dp"
+    card_view:cardUseCompatPadding="true"
+    tools:context="com.example.PremiumCleanCare.TrackingList"
+    android:id="@+id/cv_tracking">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:paddingTop="10dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="250px"
+                android:layout_height="250px"
+                android:id="@+id/imgsepatu"
+                android:src="@drawable/sepatu1"/>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="110dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <!-- TextView No Nota -->
+                    <TextView
+                        android:id="@+id/txt_no_nota"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="9pt"
+                        android:textStyle="bold"/>
+                    <!-- TextView Tanggal -->
+                    <TextView
+                        android:id="@+id/txt_tanggal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <!-- TextView Total Bayar -->
+                    <TextView
+                        android:id="@+id/txt_ttlbayar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="100dp"
+                android:id="@+id/txtstatus"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="5dp"
+                android:padding="2sp"
+                android:textSize="8pt"
+                android:text="Selesai"
+                android:background="@drawable/style_status"
+                android:textStyle="bold"
+                android:textColor="#33cc33"
+                android:textAlignment="center"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
